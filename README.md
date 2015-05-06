@@ -3,7 +3,7 @@
 [![NPM Repo](https://img.shields.io/npm/v/snack-cli.svg)](https://www.npmjs.com/package/snack-cli)
 [![License](http://img.shields.io/badge/License-Apache_2-red.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 
-**SNACK_CLI** is command-line interfaces for node.js
+**SNACK-CLI** is command-line interfaces for node.js
 
 # Install by npm
 
