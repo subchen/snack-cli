@@ -42,14 +42,14 @@ You will get:
 
 ```
 {
-    "host": '192.168.0.254',
-    "port": 22,
-    "username": "root",
-    "password": "111111",
-    "autoMkdirs": true,
-    "args": [
-        "./1.txt",
-        "/tmp/1.txt"
+    'host': '192.168.0.254',
+    'port': 22,
+    'username': 'root',
+    'password': '111111',
+    'autoMkdirs': true,
+    'args': [
+        './1.txt',
+        '/tmp/1.txt'
     ]
 }
 ```
