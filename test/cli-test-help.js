@@ -44,8 +44,7 @@ describe('cli', function() {
             .option('    --auto-mkdirs', 'mkdirs when dir not found')
             .parse(['--help']);
     });
-    
-    
+
     it('--help more', function() {
         var helps = [];
         helps.push('Usage: test [options] ...');

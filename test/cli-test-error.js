@@ -47,7 +47,7 @@ describe('cli', function() {
         var cmd = new cli.CLI();
         cmd.name('sftp').option('-f <file>').option('-v').parse(['-f -v']);
     });
-    
+
     it('cannot accept more arguments', function() {
         process.exit = function(code) {
             equal(code, 1);
