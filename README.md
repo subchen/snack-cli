@@ -22,11 +22,13 @@ var argv = cli
     .usage('[options] local remote')
     .description('An sftp application written by node.js')
     .option('    --host <host>', 'remote ssh hostname/ip')
-    .option('    --port <port>', 'remote ssh port', '22', cli.asNumber)
+    .option('    --port <port>', 'remote ssh port', '22', cli.transformers.asInt)
     .option('-u, --username <user>', 'username for authentication', 'root')
     .option('-p, --password <pass>', 'password for authentication')
     .option('    --auto-mkdirs', 'mkdirs when dir not found')
     .allowArgumentCount(2)
+     //.allowUnknownOption()
+     //.allowMissingRequiredOption()
     .parse();
 
 console.log(argv);

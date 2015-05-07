@@ -1,21 +1,19 @@
 var assert = require('assert');
-var util = require('util');
 var cli = require('../');
+var test = require('./cli-test-utils');
 
 /* jshint mocha: true */
 describe('cli', function() {
 
     var equal = assert.strictEqual;
 
-    it('--version', function() {
-        var info = [];
-        console.info = function() {
-            info.push(util.format.apply(util, arguments));
-        };
+    beforeEach(test.setup);
+    afterEach(test.cleanup);
 
+    it('--version', function() {
         process.exit = function(code) {
             equal(code, 0);
-            equal(info.join('\n'), '1.0.0-beta');
+            equal(console.infoGet(), '1.0.0-beta');
         };
 
         cli = new cli.CLI();
