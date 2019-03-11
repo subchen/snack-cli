@@ -25,7 +25,12 @@
     "parser"
   ],
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash.camelcase": "^4.3.0",
+    "lodash.endswith": "^4.2.1",
+    "lodash.find": "^4.6.0",
+    "lodash.maxby": "^4.6.0",
+    "lodash.padend": "^4.6.1",
+    "lodash.startswith": "^4.2.1"
   },
   "devDependencies": {
     "coveralls": "^3.0.3",
