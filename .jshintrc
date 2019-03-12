@@ -1,5 +1,4 @@
 {
-  // Enforcing options
   "bitwise"       : true,     // Prohibit bitwise operators (&, |, ^, etc.)
   "curly"         : false,    // Require {} for every new block or scope
   "eqeqeq"        : true,     // Require triple equals (===) for comparison
@@ -40,35 +39,6 @@
   "loopfunc"      : false,    // Tolerate functions being defined in loops (ex: `for each`, multiple try/catch, function expression…)
   "moz"           : false,    // Allow Mozilla specific syntax (extends and overrides esnext features)
   "noyield"       : false,    // Tolerate generator functions with no yield statement in them.
-  "phantom"       : false,    // Defines globals available when your core is running inside of the PhantomJS runtime environment
-  "plusplus"      : false,    // Prohibit use of `++` & `--`
-  "proto"         : false,    // Tolerate using the `__proto__` property
-  "scripturl"     : false,    // Tolerate script-targeted URLs
-  "strict"        : false,    // true: Requires all functions run in ES5 Strict Mode
-  "supernew"      : false,    // Tolerate `new function () { ... };` and `new Object;`
-  "validthis"     : false,    // Tolerate using this in a non-constructor function
-  "withstmt"      : false,    // Suppresses warnings about the use of the with statement
-
-  // Environments
-  "browser"       : false,    // Web Browser (window, document, etc)
-  "browserify"    : false,    // Browserify
-  "couch"         : false,    // CouchDB
-  "devel"         : false,    // Development/debugging (alert, confirm, etc)
-  "dojo"          : false,    // Dojo Toolkit
-  "jasmine"       : false,    // Jasmine
-  "jquery"        : false,    // jQuery
-  "mocha"         : false,    // Mocha
-  "mootools"      : false,    // MooTools
-  "node"          : true,     // Node.js
-  "nonstandard"   : false,    // Widely adopted globals (escape, unescape, etc)
-  "prototypejs"   : false,    // Prototype and Scriptaculous
-  "qunit"         : false,    // QUnit
-  "rhino"         : false,    // Rhino
-  "shelljs"       : false,    // ShellJS
-  "worker"        : false,    // Web Workers
-  "wsh"           : false,    // Windows Scripting Host
-  "yui"           : false,    // Yahoo User Interface
-
-  //  Custom Globals
-  "globals"       : []        // additional predefined global variables
+  "mocha"         : true,
+  "node"          : true
 }
