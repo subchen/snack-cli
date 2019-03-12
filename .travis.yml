@@ -1,16 +1,26 @@
 language: node_js
 node_js:
-    - "6"
-    - "7"
-    - "8"
-    - "9"
-    - "10"
-    - "11"
+- '6'
+- '7'
+- '8'
+- '9'
+- '10'
+- '11'
 
 script:
-    - "npm run test-sa"
-    - "npm run test-cc"
+- npm run test-sa
+- npm run test-cc
+
 after_script:
-    - "npm run test-cc-post"
+- npm run test-cc-post
+
 cache:
-    node: true
+  npm: true
+
+deploy:
+  provider: npm
+  email: subchen@gmail.com
+  api_key:
+    secure: CQr4gdbKtO62MsijLJtn0TKiLpnDzYaYU9B9MfbCUll8cku/v6UrIuCe+A0MEsnIYsD06PZDeI/s3x3fbVIgNDV+RGpAWGXkE6qrvaZnECYBky0GAQ7S4Slvn7O50ebleXqNvjfY7eChV4Tqq6yJOaZhQBcAVt7DkCF5BvM20ag=
+  on:
+    tags: true
