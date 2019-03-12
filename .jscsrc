@@ -1,5 +1,4 @@
 {
-  "esnext": false,
 
   "requireCurlyBraces": [
     "if",
@@ -68,10 +67,10 @@
   "disallowSpacesInsideParentheses": true,
   "disallowEmptyBlocks": true,
 
-  "additionalRules": [
-    "node_modules/jscs-jsdoc/lib/rules/*.js"
+  "plugins": [
+    "jscs-jsdoc"
   ],
-  "validateJSDoc": {
+  "jsDoc": {
     "checkParamNames": true,
     "requireParamTypes": true
   }
