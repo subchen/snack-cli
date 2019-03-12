@@ -24,3 +24,4 @@ deploy:
     secure: CQr4gdbKtO62MsijLJtn0TKiLpnDzYaYU9B9MfbCUll8cku/v6UrIuCe+A0MEsnIYsD06PZDeI/s3x3fbVIgNDV+RGpAWGXkE6qrvaZnECYBky0GAQ7S4Slvn7O50ebleXqNvjfY7eChV4Tqq6yJOaZhQBcAVt7DkCF5BvM20ag=
   on:
     tags: true
+    node: '11'
